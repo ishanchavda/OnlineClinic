@@ -1,0 +1,82 @@
+/* @font-face {
+    font-family: myFirstFont;
+    src: url();
+    font-weight: bold;
+    font-display: swap;
+}
+@font-face {
+    font-family: myFirstFont;
+    src: url();
+    font-weight: regular;
+    font-display: swap;
+}
+@font-face {
+    font-family: myFirstFont;
+    src: url();
+    font-display: swap;
+} */
+
+
+*, html, body {
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+}
+
+a:hover{
+    text-decoration: none;
+}
+
+
+ /* --------- Container Styles ---------*/
+.container-full { max-width: 100%; width: 100%; margin: 0 auto; padding: 0 15px; }
+.container {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 15px;
+ }
+@media screen and (min-width: 1200px){
+    .container{
+        max-width: 1170px;
+    }
+}
+@media screen and (min-width: 992px){
+    .container{
+        max-width: 1170px;
+    }
+}
+@media screen and (min-width: 768px){
+    .container{
+        max-width: 750PX;
+    }
+}
+@media screen and (min-width: 576px){
+    .container{
+        max-width: 750PX;
+    }
+}
+
+/* --------- // column Styles ---------*/
+.col-sm-5, .col-sm-7{
+    position: relative;
+    padding:0 15px;
+    width: 100%;
+}
+ @media screen and (min-width: 768px){
+    .col-sm-7{
+        width: 58.333333%;
+        float: left;
+     }
+     .col-sm-5{
+        width: 41.666667%;
+        float: left;
+     }
+}
+/* --------- column Styles ---------*/
+
+ /* --------- // Container Styles ---------*/
+
+/* --------- About box Styles ---------*/
+ #about-section
+
+/* --------- //About box Styles ---------*/
