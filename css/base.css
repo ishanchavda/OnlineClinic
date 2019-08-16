@@ -26,7 +26,20 @@
 a:hover{
     text-decoration: none;
 }
-
+img {
+    vertical-align: middle;
+    max-width: 100%;
+    height: auto;
+}
+.clearfix:after, .clearfix:before,
+header:after, header:before,
+footer:after, footer:before,
+.container:after, .container:before,
+.container-full:after, .container-full:before
+{
+    display: table;
+    content: " ";
+}
 
  /* --------- Container Styles ---------*/
 .container-full { max-width: 100%; width: 100%; margin: 0 auto; padding: 0 15px; }
@@ -55,14 +68,19 @@ a:hover{
         max-width: 750PX;
     }
 }
+ /* --------- // Container Styles ---------*/
 
-/* --------- // column Styles ---------*/
-.col-sm-5, .col-sm-7{
+/* --------- column Styles ---------*/
+.col-sm-4 ,.col-sm-5, .col-sm-7{
     position: relative;
     padding:0 15px;
     width: 100%;
 }
  @media screen and (min-width: 768px){
+    .col-sm-4{
+        width: 33.333333%;
+        float: left;
+    }
     .col-sm-7{
         width: 58.333333%;
         float: left;
@@ -72,11 +90,8 @@ a:hover{
         float: left;
      }
 }
-/* --------- column Styles ---------*/
-
- /* --------- // Container Styles ---------*/
+/* --------- //column Styles ---------*/
 
 /* --------- About box Styles ---------*/
- #about-section
-
+ #about-section{}
 /* --------- //About box Styles ---------*/
