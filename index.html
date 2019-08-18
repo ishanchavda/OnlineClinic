@@ -1,3 +1,11 @@
+<!-- 
+Author Nama : Ishan Chavda.
+Email : imchavda1997@gmail.com.
+Technology : HTML5, CSS3, jQuery3.1.
+project name : Online Clinic.
+Max-resolution: 1600px
+Min-resolution: 320px;
+-->
 <!DOCTYPE html>
 <html lang="en">
    <head>
@@ -5,22 +13,26 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta http-equiv="X-UA-Compatible" content="ie=edge">
       <title>Welcome to Online Clinic</title>
-      <link rel="stylesheet" href="css/base.css">
+      <link rel="stylesheet" href="css/base-min.css" type="text/css">
+      <link rel="shortcut icon" type="image/png" href="imgs/favicon.png"/>
    </head>
    <body>
+      <div id="preloader">
+         <div id="status">&nbsp;</div>
+      </div>
+      <!-- header section -->
       <header id="navbar-section">
          <nav class="navbar">
             <div class="container">
                <div class="brand">
                   <a href="index.html"><img src="imgs/logo.png" alt="logo"></a>
                </div>
-               
                <div class="links">
                   <div class="bars">
                      <div class="bar top"></div>
                      <div class="bar center"></div>
                      <div class="bar bottom"></div>
-                  </div> 
+                  </div>
                   <ul>
                      <li><a href="#">Home</a></li>
                      <li><a href="#">Features</a></li>
@@ -28,11 +40,20 @@
                   </ul>
                </div>
                <div class="clear"></div>
-            </div>
+            </div> <!--  container end -->
          </nav>
       </header>
+      <!-- // header section -->
+
+      <!-- shapes section -->
+      <div class="right-middle-shape"></div>
+      <div class="left-middle-shape"></div>
+      <div class="footer-shape"></div>
+      <!-- //shapes section -->
+      
+      <!-- heroBanner section -->
       <section id="herobanner-section">
-         <div class="right-shape shape"></div>
+         <div class="left-shape shape"></div>
          <div class="container">
             <div class="row">
                <div class="box" id="box_zero">
@@ -49,10 +70,12 @@
                   </div>
                   <div class="clear"></div>
                </div>
-            </div>
-         </div>
-
+            </div> <!--  row end -->
+         </div> <!--  container end -->
       </section>
+      <!-- // heroBanner section -->
+
+      <!-- box section -->      
       <section id="about-section">
          <div class="container">
             <div class="row">
@@ -70,7 +93,7 @@
                   </div>
                   <div class="clear"></div>
                </div>
-            </div>
+            </div> <!--  row end -->
             <div class="row">
                <div class="box" id="box_tow">
                   <div class="col-sm-5 img-div">
@@ -86,7 +109,7 @@
                   </div>
                   <div class="clear"></div>
                </div>
-            </div>
+            </div> <!--  row end -->
             <div class="row">
                <div class="box" id="box_three">
                   <div class="col-sm-5 img-div">
@@ -102,24 +125,27 @@
                   </div>
                   <div class="clear"></div>
                </div>
-            </div>
-         </div>
+            </div> <!--  row end -->
+         </div> <!--  container end -->
          <div class="dotshape-right"></div>
-         <div class="middle-rightshape shape"></div>
-         <div class="middle-leftshape shape"></div>
-
       </section>
+      <!-- // box section -->      
+
+      <!-- video section -->      
       <section id="video-section">
          <div class="container">
             <!-- <video src=""></video> -->
             <div class="video-div">
                <h1 class="heading"> Treatment delivered to your door </h1>
                <a href="https://www.youtube.com" target="_blank" >
-                  <img src="imgs/play.png" alt="play button">
+               <img src="imgs/play.png" alt="play button">
                </a>
             </div>
-         </div>
+         </div><!--  container end -->
       </section>
+      <!--  video end -->
+
+      <!-- support section -->
       <section id="support-section">
          <div class="container">
             <h1 class="heading text-center"> With the support of our customer, and partners, we've improved trail access for millions of people </h1>
@@ -133,8 +159,11 @@
                <p>We treat <span>52 lifestyle</span> customer</p>
             </div>
             <div class="clear"></div>
-         </div>
+         </div> <!--  container end -->
       </section>
+      <!-- //support section -->      
+
+      <!-- join ad section -->      
       <section id="join-section">
          <div class="container">
             <div class="row">
@@ -149,9 +178,12 @@
                   </div>
                </div>
                <div class="clear"></div>
-            </div>
-         </div>
+            </div> <!--  row end -->
+         </div> <!--  container end -->
       </section>
+      <!-- // join section -->  
+      
+      <!-- feedback section -->            
       <section id="feedback-section">
          <div class="container">
             <h1 class="heading">Client’s feedback</h1>
@@ -176,11 +208,15 @@
                   <div class="feedback-circle shape"></div>
                </div>
                <div class="clear"></div>
-            </div>
-         </div>
+            </div> <!--  row end -->
+         </div> <!--  container end -->
       </section>
-      <footer>
+      <!-- //feedback section -->            
+
+      <!-- footer section -->            
+      <footer>           
          <div class="container">
+            <!-- footer form section --> 
             <div class="footer-wrap">
                <div class="conact-form">
                   <h1 class="heading">Contact us</h1>
@@ -192,7 +228,7 @@
                         <div class="col-sm-6">
                            <input type="email" placeholder="Your Email" name="email" class="form-cntr">                     
                         </div>
-                     </div>
+                     </div> <!--  row end -->
                      <div class="col-sm-12">
                         <textarea name="msg" id="" rows="4" placeholder="Your Message" class="form-cntr"></textarea>
                      </div>
@@ -203,6 +239,8 @@
                </div>
                <div class="c-end-shape shape"></div>
             </div>
+            <!-- // footer form section --> 
+            <!-- footer link section --> 
             <div class="footer-end">
                <div class="row">
                   <div class="col-sm-3">
@@ -221,45 +259,55 @@
                      </ul>
                   </div>
                   <div class="col-sm-3">
-                        <h4 class="footer-heading">Additonal Information</h4>
-                        <ul class="footer-list">
-                           <li><a href="#">Returns Policy</a></li>
-                           <li><a href="#">Terms & Conditions</a></li>
-                           <li><a href="#">Legal</a></li>
-                           <li><a href="#">Privacy Policy</a></li>
-                           <li><a href="#">Patient Responsibility</a></li>
-                        </ul>
+                     <h4 class="footer-heading">Additonal Information</h4>
+                     <ul class="footer-list">
+                        <li><a href="#">Returns Policy</a></li>
+                        <li><a href="#">Terms & Conditions</a></li>
+                        <li><a href="#">Legal</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Patient Responsibility</a></li>
+                     </ul>
                   </div>
                   <div class="col-sm-3">
                      <h4 class="footer-heading">Our App</h4>
-                        <ul class="footer-list">
-                           <li><a href="#">Android</a></li>
-                           <li><a href="#">Apples</a></li>
-                        </ul>
-                        <a class="s-img" href="https://www.instagram.com" target="_blank">
-                           <img src="imgs/instagram.png" alt="instagram">
-                        </a>
-                        <a class="s-img" href="https://www.facebook.com" target="_blank">
-                           <img src="imgs/facebook.png" alt="facebook">
-                        </a>
-                        <a class="s-img" href="https://www.twitter.com" target="_blank">
-                           <img src="imgs/twitter.png" alt="instagram">
-                        </a>
+                     <ul class="footer-list">
+                        <li><a href="#">Android</a></li>
+                        <li><a href="#">Apples</a></li>
+                     </ul>
+                     <a class="s-img" href="https://www.instagram.com" target="_blank">
+                     <img src="imgs/instagram.png" alt="instagram">
+                     </a>
+                     <a class="s-img" href="https://www.facebook.com" target="_blank">
+                     <img src="imgs/facebook.png" alt="facebook">
+                     </a>
+                     <a class="s-img" href="https://www.twitter.com" target="_blank">
+                     <img src="imgs/twitter.png" alt="instagram">
+                     </a>
                   </div>
                   <div class="clear"></div>
-               </div>
+               </div> <!--  row end -->
             </div>
-         </div>
+            <!-- footer link section --> 
+         </div> <!--  container end -->
          <div class="middle-end-circle shape"></div>
       </footer>
+      <!-- // footer section --> 
 
-      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+      <script src="js/jquery.min.js"></script>
       <script>
-         $('.links .bars').click(function(){
-            $(this).parent().toggleClass('open');
-         })
-      
-      
+         $(document).ready(function(){
+            $('.links .bars').click(function(){
+               $(this).parent().toggleClass('open');
+            });
+         });
+         
+         $(window).on('load', function() { // makes sure the whole site is loaded 
+            $('#status').fadeOut(); // will first fade out the loading animation 
+            $('#preloader').delay(350).fadeOut('slow'); // will fade out the white DIV that covers the website. 
+            $('body').delay(350).css({'overflow':''});
+         });
+         
       </script>
    </body>
 </html>
