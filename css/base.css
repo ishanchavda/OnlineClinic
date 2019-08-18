@@ -404,11 +404,13 @@ footer:before,
 	top: 0;
 	left: -17%;
 }
-.video-div img {
+.video-div img,
+.video-div span {
 	display: block;
 	margin: 16px auto;
 }
-.video-div img:hover {
+.video-div img:hover,
+.video-div span:hover {
 	opacity: 0.6;
 }
 .video-div .heading {
@@ -915,3 +917,26 @@ footer {
 	}
 }
 /* --------- // media query for download Styles ---------*/
+
+/* --------- sprite images Styles ---------*/
+.bg-facebook {
+	width: 11px;
+	height: 20px;
+	background: url('../imgs/css_sprites.png') -10px -107px
+}
+.bg-instagram {
+	width: 21px;
+	height: 21px;
+	background: url('../imgs/css_sprites.png') -106px -10px
+}
+.bg-play {
+	width: 76px;
+	height: 77px;
+	background: url('../imgs/css_sprites.png') -10px -10px
+}
+.bg-twitter {
+	width: 21px;
+	height: 18px;
+	background: url('../imgs/css_sprites.png') -106px -51px
+}
+/* --------- sprite images Styles ---------*/
