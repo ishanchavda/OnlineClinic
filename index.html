@@ -8,9 +8,31 @@
       <link rel="stylesheet" href="css/base.css">
    </head>
    <body>
-      <header>
+      <header id="navbar-section">
+         <nav class="navbar">
+            <div class="container">
+               <div class="brand">
+                  <a href="index.html"><img src="imgs/logo.png" alt="logo"></a>
+               </div>
+               
+               <div class="links">
+                  <div class="bars">
+                     <div class="bar top"></div>
+                     <div class="bar center"></div>
+                     <div class="bar bottom"></div>
+                  </div> 
+                  <ul>
+                     <li><a href="#">Home</a></li>
+                     <li><a href="#">Features</a></li>
+                     <li><a href="#">About</a></li>
+                  </ul>
+               </div>
+               <div class="clear"></div>
+            </div>
+         </nav>
       </header>
       <section id="herobanner-section">
+         <div class="right-shape shape"></div>
          <div class="container">
             <div class="row">
                <div class="box" id="box_zero">
@@ -29,6 +51,7 @@
                </div>
             </div>
          </div>
+
       </section>
       <section id="about-section">
          <div class="container">
@@ -81,11 +104,20 @@
                </div>
             </div>
          </div>
+         <div class="dotshape-right"></div>
+         <div class="middle-rightshape shape"></div>
+         <div class="middle-leftshape shape"></div>
+
       </section>
       <section id="video-section">
          <div class="container">
             <!-- <video src=""></video> -->
-            <img src="imgs/video.png" alt="video">
+            <div class="video-div">
+               <h1 class="heading"> Treatment delivered to your door </h1>
+               <a href="https://www.youtube.com" target="_blank" >
+                  <img src="imgs/play.png" alt="play button">
+               </a>
+            </div>
          </div>
       </section>
       <section id="support-section">
@@ -106,10 +138,10 @@
       <section id="join-section">
          <div class="container">
             <div class="row">
-               <div class="col-sm-5">
+               <div class="col-sm-5 img-div">
                   <img src="imgs/join_customer.png" alt="Join The Thousands of satisfied customers">
                </div>
-               <div class="col-sm-7">
+               <div class="col-sm-7 text-div">
                   <h1 class="heading">Join The Thousands of satisfied customers <span>It’s just a few clicks away</span> </h1>
                   <div class="download">
                      <img src="imgs/google_play.png" alt="Google Play" class="google_p">
@@ -122,9 +154,7 @@
       </section>
       <section id="feedback-section">
          <div class="container">
-            <h1 class="heading">
-               Client’s feedback
-            </h1>
+            <h1 class="heading">Client’s feedback</h1>
             <div class="row">
                <div class="feedback-div">
                   <img src="imgs/star.png" alt="Rating">
@@ -143,25 +173,93 @@
                   <h4 class="feedback-heading">Excellent</h4>
                   <p class="feedback-content">Great service. Hassle free. Great delivery times. Credit card wasn't scammed. Go...</p>
                   <p class="date">10 March</p>
+                  <div class="feedback-circle shape"></div>
                </div>
                <div class="clear"></div>
             </div>
          </div>
       </section>
       <footer>
-          <div class="container">
-              <div class="conact-form">
-                <h1 class="heading">Contact us</h1>
-                <form action="" class="c-form" >
-
-                    <input type="text" placeholder="Your Name" name="name">
-                    <input type="email" placeholder="Your Email" name="email">
-                    <textarea name="msg" id="" rows="4" placeholder="Your Message"></textarea>
-
-                    <button>Send Message</button>
-                </form>
-              </div>
-          </div>
+         <div class="container">
+            <div class="footer-wrap">
+               <div class="conact-form">
+                  <h1 class="heading">Contact us</h1>
+                  <form action="" class="c-form">
+                     <div class="row">
+                        <div class="col-sm-6">
+                           <input type="text" placeholder="Your Name" name="name" class="form-cntr">                     
+                        </div>
+                        <div class="col-sm-6">
+                           <input type="email" placeholder="Your Email" name="email" class="form-cntr">                     
+                        </div>
+                     </div>
+                     <div class="col-sm-12">
+                        <textarea name="msg" id="" rows="4" placeholder="Your Message" class="form-cntr"></textarea>
+                     </div>
+                     <div class="col-sm-12 text-center">
+                        <button class="submit-btn">Send Message</button>
+                     </div>
+                  </form>
+               </div>
+               <div class="c-end-shape shape"></div>
+            </div>
+            <div class="footer-end">
+               <div class="row">
+                  <div class="col-sm-3">
+                     <h4 class="footer-heading">Contact Us</h4>
+                     <p class="footer-p"> <span>Hexpress Healthcare Ltd.</span>  144 Mitcham Road, London - SW17 9NH, UK. </p>
+                     <a href="mailto:enquiry@onlineclinic.co.uk" class="footer-a">enquiry@onlineclinic.co.uk</a>
+                     <a href="tel:02033222225" class="footer-a">020 3322 2225</a>
+                  </div>
+                  <div class="col-sm-3">
+                     <h4 class="footer-heading">About OnlineClinic</h4>
+                     <ul class="footer-list">
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Trustpilot reviews</a></li>
+                        <li><a href="#">Delivery Info</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                     </ul>
+                  </div>
+                  <div class="col-sm-3">
+                        <h4 class="footer-heading">Additonal Information</h4>
+                        <ul class="footer-list">
+                           <li><a href="#">Returns Policy</a></li>
+                           <li><a href="#">Terms & Conditions</a></li>
+                           <li><a href="#">Legal</a></li>
+                           <li><a href="#">Privacy Policy</a></li>
+                           <li><a href="#">Patient Responsibility</a></li>
+                        </ul>
+                  </div>
+                  <div class="col-sm-3">
+                     <h4 class="footer-heading">Our App</h4>
+                        <ul class="footer-list">
+                           <li><a href="#">Android</a></li>
+                           <li><a href="#">Apples</a></li>
+                        </ul>
+                        <a class="s-img" href="https://www.instagram.com" target="_blank">
+                           <img src="imgs/instagram.png" alt="instagram">
+                        </a>
+                        <a class="s-img" href="https://www.facebook.com" target="_blank">
+                           <img src="imgs/facebook.png" alt="facebook">
+                        </a>
+                        <a class="s-img" href="https://www.twitter.com" target="_blank">
+                           <img src="imgs/twitter.png" alt="instagram">
+                        </a>
+                  </div>
+                  <div class="clear"></div>
+               </div>
+            </div>
+         </div>
+         <div class="middle-end-circle shape"></div>
       </footer>
+
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+      <script>
+         $('.links .bars').click(function(){
+            $(this).parent().toggleClass('open');
+         })
+      
+      
+      </script>
    </body>
 </html>
